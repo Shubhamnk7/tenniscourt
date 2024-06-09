@@ -28,6 +28,9 @@ public class RoomService {
     public void deleteRoom(Integer id) {
         roomRepository.deleteById(id);
     }
+
+    //TODO - have to make updateUser method along with validation
+
 }
 
 
