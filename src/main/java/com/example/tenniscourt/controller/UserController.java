@@ -30,7 +30,7 @@ public class UserController {
         return userService.saveUser(user);
     }
 
-    //TODO - move this logic to service class along with user id not found exception
+    //TODO - move this logic to service class along with user id not found exception.
     @PutMapping("/{id}")
     public User updateUser(@PathVariable Integer id, @RequestBody User userDetails) {
         User user = userService.getUserById(id).orElseThrow();
